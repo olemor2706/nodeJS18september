@@ -30,9 +30,9 @@ function handle (request, response){
 		response.setHeader('Content-type', 'text/css');
 		// Направляем поток в качестве ответа на запрос
 		stream.pipe (response);
-	} else if (request.url.includes('cake.svg')){
-			stream = fs.createReadStream('cake.svg');
-			response.setHeader('Content-type', 'image/svg+xml');
+	} else if (request.url.includes('cake.jpg')){
+			response.setHeader('Content-type', 'image/jpeg');
+			stream = fs.createReadStream('cake.jpg');
 			stream.pipe (response);	
 		}
 	else {
@@ -45,20 +45,20 @@ function handle (request, response){
 				break;
 			} 
 			if (request.url.includes("file3")){
-				content = content + "<a href = 'file4.html'> file4</a>";
+				content = content.replace ("$content", "<a href = 'file4.html'> file4</a>");
 				break;
 			} 
 			if (request.url.includes("file4")){
-				content = content + "<a href = 'file1.html'> file1</a>";
+				content = content.replace ("$content", "<a href = 'file1.html'> file1</a>");
 				break;
 			} 
-			content = content + "<a href = 'file2.html'> file2</a> " +
+			content = content.replace ("$content"," ") + "<a href = 'file2.html'> file2</a> " +
 				"<a href = 'file3.html'> file3</a> " +
 				"<a href = 'file4.html'> file4</a>";
 			break;
 		}
 	
-	content = content + '<img src = "cake.svg">';
+	content = content + '<img src = "cake.jpg">';
 	content = content + '</body>' +
 		'</html>';
 	// Отправляем ответ клиенту
