@@ -4,27 +4,9 @@
 		<meta charset="utf-8"/>
 	</head>
 	<body>
-		<input type="range" min="1" max="500" id="in_cx">cx</input> <br>
-		<input type="range" min="1" max="500"  id="in_cy">cy</input> <br>
-		<input type="range" min="1" max="300"  id="in_r">r</input> <br>
-		<input type="color" id="in_color">fill</input> <br>
-		<input type="button" onclick="work()" value="Drow">	</input>
-		<div id="out">
-		</div>
-		<script>
-		  function work(){
-		   var str_cx = document.getElementById("in_cx").value;
-		   var str_cy = document.getElementById("in_cy").value;
-		   var str_r = document.getElementById("in_r").value;
-		   var str_color = document.getElementById("in_color").value;
-		   var out = document.getElementById("out");
-		   out.innerHTML = 
-		   '<svg width="800" height="600">' +
-		       '<circle cx="'+str_cx+'"' +
-			   'cy="'+str_cy+'"' +
-			   'r="'+str_r+'"' +
-			   'fill="'+str_color+'"/></svg>';
-		  }
-		</script>
+		
+		<svg width="800" height="600">
+		       <circle cx="$cx" cy="$cy" r="$r" fill="$fill"/>
+		</svg>
 	</body>
 </html>
