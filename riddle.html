@@ -2,26 +2,36 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
+		<style type="text/css">
+			.leftShore {position:absolute;	left:100px;}
+			.rightShore {position:absolute; left:300px;}
+		</style>
 	</head>
 	<body>
+		<div> 
+			<h2>$msg<h2>
+		</div>
 		<form method = "get" action = "/man">
 			<input type="hidden" name = "choice" value = "man"></input> <br>
-			<input type="submit" value="Drow">	</input>
+			<input type="submit" value="    Man    " class = "$manClass">	</input>
 		</form>
+		<br>
 		
 		<form method = "get" action = "/wolf">
 			<input type="hidden" name = "choice" value = "wolf"></input> <br>
-			<input type="submit" value="Drow">	</input>
+			<input type="submit" value="   Wolf    " class = "$wolfClass">	</input>
 		</form>
+		<br>
 		
 		<form method = "get" action = "/goat">
 			<input type="hidden" name = "choice" value = "goat"></input> <br>
-			<input type="submit" value="Drow">	</input>
+			<input type="submit" value="   Goat    " class = "$goatClass">	</input>
 		</form>
+		<br>
 		
-		<form method = "get" action = "/hay">
-			<input type="hidden" name = "choice" value = "hay"></input> <br>
-			<input type="submit" value="Drow">	</input>
+		<form method = "get" action = "/cabbage">
+			<input type="hidden" name = "choice" value = "cabbage"></input> <br>
+			<input type="submit" value="Cabbage" class = "$cabbageClass">	</input>
 		</form>
 				
 	</body>
