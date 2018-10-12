@@ -1,0 +1,24 @@
+{
+  "name": "nodejs18september",
+  "version": "1.0.0",
+  "description": "",
+  "main": "riddle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olemor2706/nodeJS18september.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olemor2706/nodeJS18september/issues"
+  },
+  "homepage": "https://github.com/olemor2706/nodeJS18september#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4"
+  }
+}
