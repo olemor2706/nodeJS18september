@@ -235,6 +235,14 @@ app.get ("/check", function (request, response){
 	response.end(request.cookies.test);
 }) ;
 
+app.get ("/peasant.jpg", function (request, response){
+	var options = {
+		root: __dirname
+	}
+	console.log (__dirname);
+	response.sendFile ("peasant.jpg", options); 
+}) ;
+
 
 app.listen(port, function(){
 	console.log ('Сервер запущен по адресу' + hostname + ':' + port);
