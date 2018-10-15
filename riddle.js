@@ -168,7 +168,7 @@ app.get ("/wolf", function(request, response) {
 	if (wolfArray [unitNum] == -1){
 		strError = "Недопустимый ход! Нельзя переплывать реку без мужика!";
 	} else {
-		unitNum = manArray [unitNum]; 
+		unitNum = wolfArray [unitNum]; 
 	}
 	unitArray[unitNum]();
 	if (isError){
@@ -188,7 +188,7 @@ app.get ("/goat", function(request, response) {
 	if (goatArray [unitNum] == -1){
 		strError = "Недопустимый ход! Нельзя переплывать реку без мужика!";
 	} else {
-		unitNum = manArray [unitNum]; 
+		unitNum = goatArray [unitNum]; 
 	}
 	unitArray[unitNum]();
 	if (isError){
@@ -208,7 +208,7 @@ app.get ("/cabbage", function(request, response) {
 	if (cabbageArray [unitNum] == -1){
 		strError = "Недопустимый ход! Нельзя переплывать реку без мужика!";
 	} else {
-		unitNum = manArray [unitNum]; 
+		unitNum = cabbageArray [unitNum]; 
 	}
 	unitArray[unitNum]();
 	if (isError){
